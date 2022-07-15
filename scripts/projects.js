@@ -21,7 +21,7 @@ export function createProjects(highlightedProjects, callback){
         projectCard.dataset.project = 'card';
         
         const projectLink = document.createElement('a');
-        projectLink.href = "../projectDetails/index.html";
+        projectLink.href = "projectDetails/index.html";
         projectLink.classList.add('project-link');
         projectLink.dataset.project = 'link';
         projectLink.dataset.index = i;
@@ -58,7 +58,7 @@ export function createProjects(highlightedProjects, callback){
         const projectButton = document.createElement('a');
         projectButton.classList.add('project-button');
         projectButton.textContent = 'Ver projeto';
-        projectButton.href = "../projectDetails/index.html";
+        projectButton.href = "projectDetails/index.html";
         projectButton.dataset.project = 'link';
         projectButton.dataset.index = i;
 
