@@ -31,7 +31,7 @@ const skills = {
 
 const skillsSection = document.querySelector('[data-section="skills"]');
 const skillList = document.querySelector('[data-skills="list"]');
-const url = '../assets/images/skills/';
+const url = 'assets/images/skills/';
 const sliderTime = 3000;
 let currentItem = 0;
 

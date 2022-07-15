@@ -1,6 +1,6 @@
 import { projects } from "../projects/projectsList.js";
 
-const url = '../assets/images/projetos-portfolio/';
+const url = 'assets/images/projetos-portfolio/';
 const projectsListElement = document.querySelector('[data-projects="list"]');
 const chosenProjects = ['Calculadora de Preços', 'Loja On-line', 'Cloneflix', 'Portfólio'];
 
