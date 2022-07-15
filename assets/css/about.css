@@ -1,0 +1,163 @@
+.about{
+    background-color: #FFF;
+    border-bottom: 1px solid #DDD;
+    box-shadow: 1px 1px 20px #DDD;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+    width: 100%;
+}
+
+.about-image__wrapper{
+    background-image: none;
+    background-position: 47% 0%;
+    display: flex;
+    justify-content: center;
+    transform: translateX(50%);
+    transition: 2s;
+    width: 50%;
+}
+
+.about-image__wrapper--translate{
+    background-image: url(../images/profile-image/marcelo-yellow.png);
+    background-repeat: no-repeat;
+    transform: translateX(20%);
+}
+
+.about-photo{
+    transition: 2s;
+}
+
+.about-photo--translate{
+    filter: grayscale(1);
+}
+
+.about-text__wrapper{
+    align-items: flex-end;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 15% 2% 10%;
+    width: 50%;
+}
+
+.about-title{
+    background-color: yellow;
+    color: #333333;
+    display: flex;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: lowercase;
+}
+
+.about-title__decoration--left::before{
+    content: '\e5cb';
+    font-size: 3rem;
+}
+
+.about-title__decoration--right::after{
+    content: '\e5cc';
+    font-size: 3rem;
+}
+
+.about-description{
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    text-align: right;
+    transition: 1s;
+}
+
+.description--hide{
+    opacity: 0;
+    transition: 1s;
+}
+
+.about-button{
+    align-items: center;
+    border-bottom: 3px solid #FFFF00;;
+    color: #333333;
+    display: flex;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-top: 5rem;
+    padding: .5rem 1.5rem;
+    transition: 2s;
+}
+
+.about-button-icon::after {
+    color: #333;
+    content: '\e8e4';
+    margin-left: .5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .about{
+        background-color: transparent;
+        border-bottom: none;
+        box-shadow: none;
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+    .about-image__wrapper{
+        background-color: #FFF;
+        background-image: url(../images/profile-image/marcelo-yellow.png);
+        background-repeat: no-repeat;
+        background-position: 48% 0%;
+        background-size: 50%;
+        border-bottom: 1px solid #DDD;
+        box-shadow: 1px 1px 20px #DDD;
+        transform: translateX(0%);
+        width: 100%;
+    }
+
+    .about-photo{
+        filter: grayscale(1);
+        width: 50%;
+    }
+
+    .about-text__wrapper{
+        align-items: center;
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .about-title{
+        display: none;
+    }
+
+    .about-description{
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        text-align: center;
+        transition: 1s;
+    }
+
+    .description--hide{
+        opacity: 1;
+        transition: 1s;
+    }
+
+    .about-button{
+        align-items: center;
+        border-bottom: 3px solid #FFFF00;;
+        border-radius: 5px;
+        color: #333333;
+        display: flex;
+        font-size: 1.15rem;
+        font-weight: 700;
+        margin-top: 5rem;
+        padding: .5rem 1.5rem;
+        transition: 2s;
+    }
+
+    .about-button-icon::after {
+        color: #333;
+        content: '\e8e4';
+        margin-left: .5rem;
+    }
+}
+
+

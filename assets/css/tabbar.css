@@ -1,0 +1,50 @@
+.tabbar{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .tabbar{
+        background-color: #FFF;
+        border-top: 2px solid #DDD;
+        box-shadow: 1px 1px 10px #DDD;
+        bottom: 0;
+        display: flex;
+        height: 56px;
+        justify-content: space-around;
+        left: 0;
+        position: fixed;
+        width: 100vw;
+    }
+    
+    .tabbar-item-wrapper{
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        height: 100%;
+        width: calc(100% / 2);
+    }
+    
+    .tabbar__item{
+        border: none;
+        color: #333;
+        font-size: 1.75rem;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .tabbar__item--active{
+        font-weight: 700;
+    }
+    
+    .tabbar__item--home::after{
+        content: '\e88a';
+    }
+    
+    .tabbar__item--projects::after{
+        content: '\e992';
+    }
+    
+    .tabbar__item--contact::after{
+        content: '\e158';
+    }
+}
