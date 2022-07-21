@@ -12,16 +12,16 @@ export function menuSocial(color, direction, showName, page){
    
     for (let index in socialNetworks){
         let image_icon = socialNetworks[index].img_url;
+        let page_url = socialNetworks[index].page_url;
         
         if(color === 'white'){
             image_icon = socialNetworks[index].img_url_white;
         }
 
-        if (page === 'home'){
-            const page_url = socialNetworks[index].page_url;
-        } else {
-            const page_url = `../../${socialNetworks[index].page_url}`;
+        if (page !== 'home'){
+            page_url = `../../${socialNetworks[index].page_url}`;
         }
+
         const name = socialNetworks[index].name;
         const img_url = image_icon;
         

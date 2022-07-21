@@ -48,7 +48,7 @@ function createProjects(list, highlightedProjects, page){
         projectCard.dataset.project = 'card';
         
         const projectLink = document.createElement('a');
-        projectLink.href = "/pages/project-details/index.html";
+        projectLink.href = "https://marceloafl.github.io/portfolio/pages/project-details/index.html";
         projectLink.classList.add('card-section__item-link');
         projectLink.dataset.project = 'link';
         projectLink.dataset.index = i;
