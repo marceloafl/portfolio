@@ -86,7 +86,7 @@ function createProjects(list, highlightedProjects, page){
         }
         projectImage.alt = highlightedProjects[i].name;
 
-        const projectButton = button('Ver projeto', '/pages/project-details/index.html', false);
+        const projectButton = button('Ver projeto', 'https://marceloafl.github.io/portfolio/pages/project-details/index.html', false);
         projectButton.dataset.index = i;
         projectButton.dataset.project = 'link';
 

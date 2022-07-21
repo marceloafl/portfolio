@@ -113,7 +113,7 @@ function createProjectDetailsContent(project){
     const sectionWrapperA = createProjectDetailsSection(project, 'text', 'O desafio');
     const sectionWrapperB = createProjectDetailsSection(project, 'text', 'A solução');
     const sectionWrapperC = createProjectDetailsSection(project, 'list', 'Tecnologias utilizadas');
-    const backButton = buttonBack('Voltar para os projetos', 'pages/projects/index.html', false);
+    const backButton = buttonBack('Voltar para os projetos', 'https://marceloafl.github.io/portfolio/pages/projects/index.html', false);
 
     contentWrapper.appendChild(sectionWrapperA);
     contentWrapper.appendChild(sectionWrapperB);
