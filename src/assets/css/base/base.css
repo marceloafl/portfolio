@@ -1,0 +1,19 @@
+body {
+    background-color: #FAFAFA;
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+}
+
+.hide{
+    display: none;
+}
+
+.invisible{
+    opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .invisible{
+        opacity: 1;
+    } 
+}

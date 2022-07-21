@@ -1,0 +1,130 @@
+.main-banner{
+    background-color: #FFF;
+    border-bottom: 1px solid #DDD;
+    box-shadow: 1px 1px 20px #DDD;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+    width: 100%;
+}
+
+.main-banner:hover .main-banner__image-wrapper{
+    background-image: url(../../assets/images/profile-image/marcelo-yellow.png);
+    background-repeat: no-repeat;
+    transform: translateX(20%);
+}
+
+.main-banner:hover .main-banner__image-wrapper .main-banner__image{
+    filter: grayscale(1);
+}
+
+.main-banner:hover .main-banner__text-wrapper .main-banner__description{
+    opacity: 1;
+}
+
+.main-banner:hover .main-banner__text-wrapper .button-wrapper{
+    opacity: 1;
+}
+
+.main-banner__image-wrapper{
+    background-image: none;
+    background-position: 47% 0%;
+    display: flex;
+    justify-content: center;
+    transform: translateX(50%);
+    transition: 2s;
+    width: 50%;
+}
+
+.main-banner__image{
+    transition: 2s;
+}
+
+.main-banner__text-wrapper{
+    align-items: flex-end;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 15% 5% 10%;
+    width: 50%;
+}
+
+.main-banner__title{
+    background-color: var(--color-yellow);
+    color: #333333;
+    display: flex;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: lowercase;
+}
+
+.main-banner__title-decoration--left::before{
+    content: '\e5cb';
+    font-size: 3rem;
+}
+
+.main-banner__title-decoration--right::after{
+    content: '\e5cc';
+    font-size: 3rem;
+}
+
+.main-banner__description{
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    margin-bottom: 5rem;
+    opacity: 0;
+    text-align: right;
+    transition: 1s;
+}
+
+@media screen and (max-width: 768px) {
+    .main-banner{
+        background-color: transparent;
+        border-bottom: none;
+        box-shadow: none;
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+    .main-banner__image-wrapper{
+        background-color: #FFF;
+        background-image: url(../../assets/images/profile-image/marcelo-yellow.png);
+        background-repeat: no-repeat;
+        background-position: 48% 0%;
+        background-size: 50%;
+        border-bottom: 1px solid #DDD;
+        box-shadow: 1px 1px 20px #DDD;
+        transform: translateX(0%);
+        width: 100%;
+    }
+
+    .main-banner__image{
+        filter: grayscale(1);
+        width: 50%;
+    }
+
+    .main-banner__text-wrapper{
+        align-items: center;
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .main-banner__title{
+        display: none;
+    }
+
+    .main-banner__description{
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        text-align: center;
+        transition: 1s;
+    }
+
+    .main-banner__description--hide{
+        opacity: 1;
+        transition: 1s;
+    }
+}

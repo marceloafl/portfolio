@@ -1,0 +1,21 @@
+.menu-nav{
+    display: flex;
+}
+
+.menu-nav__item{
+    box-sizing: border-box;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 1.125rem;
+    padding: 1rem;
+}
+
+.menu-nav__item-link{
+    color: #FFF;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-nav{
+        display: none;
+    }
+}

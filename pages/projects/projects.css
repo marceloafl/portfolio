@@ -1,0 +1,144 @@
+.projects{
+    align-items: center;
+    background-color: #FAFAFA;
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 10% 10rem;
+    width: 100%;
+
+    position: relative;
+}
+
+.projects-wrapper{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 0;
+    width: 100%;
+}
+
+.project-item{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    justify-content: center;
+    margin: 25px;
+    width: calc(100% / 2 - 50px);
+}
+
+.project-link{
+    background-color: #FFF;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-areas: 
+        "title title"
+        "description image"
+        "languages image";
+    height: 320px;
+    width: 100%;
+}
+
+.project-title-wrapper{
+    align-items: center;
+    border-bottom: 1px solid #333;
+    display: flex;
+    grid-area: title;
+    justify-content: center;
+}
+
+.project-title{    
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.project-description-wrapper{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    grid-area: description;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.project-description{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.project-languages-wrapper{
+    align-items: center;
+    border-top: 1px solid #333;
+    box-sizing: border-box;
+    display: flex;
+    grid-area: languages;
+    justify-content: center;
+    padding: 0 .5rem;
+}
+
+.project-languages{
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+}
+
+.project-image-wrapper{
+    align-items: center;
+    border-left: 1px solid #333;
+    display: flex;
+    grid-area: image;
+    justify-content: center;
+}
+
+.project-image{
+    border-radius: 5px;
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .projects-wrapper{
+        flex-direction: column;
+        padding: 3rem 0;
+    }
+
+    .project-item{
+        flex-direction: column;
+        height: 320px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .project-link{
+        height: 240px;
+        width: 100%;
+    }
+
+    .project-title{    
+        font-size: 1.25rem;
+    }    
+
+    .project-description{
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+    }
+
+    .project-languages{
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+    .projects-button{
+        border-bottom: 3px solid var(--color-yellow);
+        padding: 1.5rem 0;
+        text-align: center;
+        transform: translateY(50%);
+    }    
+}
+

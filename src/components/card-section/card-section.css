@@ -1,0 +1,135 @@
+.card-section{
+    align-items: center;
+    background-color: #FAFAFA;
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 10% 10rem;
+    width: 100%;
+}
+
+.card-section__list{
+    border-top: 1px solid #DDD;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 0;
+    width: 100%;
+}
+
+.card-section__item{
+    align-items: flex-end;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    justify-content: center;
+    margin: 25px;
+    width: calc(100% / 2 - 50px);
+}
+
+.card-section__item-link{
+    background-color: #FFF;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-areas: 
+        "title title"
+        "description image"
+        "languages image";
+    height: 320px;
+    width: 100%;
+}
+
+.card-section__item-link:hover{
+    box-shadow: 2px 2px 5px #333;
+}
+
+.card-section__item-link:hover .card-section__item-image{
+    box-shadow: 5px 5px 10px #333;
+}
+
+.card-section__item-title-wrapper{
+    align-items: center;
+    border-bottom: 1px solid #333;
+    display: flex;
+    grid-area: title;
+    justify-content: center;
+}
+
+.card-section__item-title{    
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card-section__item-description-wrapper{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    grid-area: description;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.card-section__item-description{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.card-section__item-languages-wrapper{
+    align-items: center;
+    border-top: 1px solid #333;
+    box-sizing: border-box;
+    display: flex;
+    grid-area: languages;
+    justify-content: center;
+    padding: 0 .5rem;
+}
+
+.card-section__item-languages{
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+}
+
+.card-section__item-image-wrapper{
+    align-items: center;
+    border-left: 1px solid #333;
+    display: flex;
+    grid-area: image;
+    justify-content: center;
+}
+
+.card-section__item-image{
+    border-radius: 5px;
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .card-section{
+        padding: 2rem 10% 5rem;
+    }
+
+    .card-section__item{
+        margin: 25px 0;
+        width: 100%;
+    }
+
+    .card-section__item-title{    
+        font-size: 1.25rem;
+    }
+
+    .card-section__item-description{
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+    }
+
+    .card-section__item-languages{
+        font-size: 1rem;
+    }
+}

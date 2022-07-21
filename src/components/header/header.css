@@ -1,0 +1,25 @@
+.header {
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #000;
+    display: flex;
+    height: 72px;
+    justify-content: space-between;
+    padding: 0 5%;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .logo__link{
+        align-items: flex-start;
+    }
+
+    .menu-nav--header{
+        display: none;
+    }
+
+    .menu-social--header{
+        display: none;
+    }
+}
+

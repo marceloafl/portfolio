@@ -1,0 +1,39 @@
+.tab-bar{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .tab-bar{
+        background-color: #FFF;
+        border-top: 2px solid #DDD;
+        box-shadow: 1px 1px 10px #DDD;
+        box-sizing: border-box;
+        bottom: 0;
+        display: flex;
+        height: 56px;
+        justify-content: space-around;
+        left: 0;
+        position: fixed;
+        width: 100%;
+    }
+    
+    .tab-bar__item{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .tab-bar__icon--home::after{
+        content: '\ea44';
+    }
+    
+    .tab-bar__icon--projects::after{
+        content: '\ea24';
+    }
+    
+    .tab-bar__icon--contact::after{
+        content: '\e158';
+    }
+
+}

@@ -1,25 +1,27 @@
-import { createSkills, handleArrows, automaticMoveSkills } from "./scripts/skills.js";
-import { createHighlightedProjects } from "./scripts/projects.js";
-import { effectTrigger, resetEffect } from "./scripts/about.js";
+import { header } from "./src/components/header/header.js";
+import { main } from "./src/components/main-section/main-section.js";
+import { footer } from "./src/components/footer/footer.js";
+import { automaticMoveSlider } from "./src/components/slider/slider-transition.js";
+import { listenProjectsElements } from "./src/components/card-section/card-section.js";
+import { showSuccessMessage } from "./src/components/contact-section/contact-section.js";
 
-const aboutWrapper = document.querySelector('[data-about="wrapper"]');
-const skillsSection = document.querySelector('[data-section="skills"]');
-const arrows = document.querySelectorAll('[data-arrow]');
+header();
+main('home');
+footer();
 
-aboutWrapper.addEventListener('mouseover', effectTrigger);
-aboutWrapper.addEventListener('mouseleave', resetEffect)
+window.addEventListener('mouseover', event => {
+    const target = event.target;
+    const sliderElements = document.querySelectorAll('[data-skills="item"]');
 
-createSkills();
-automaticMoveSkills();
-createHighlightedProjects();
-
-arrows.forEach(arrow => {
-    arrow.addEventListener('click', () => {
-        handleArrows(arrow);
-    });
+    if (target.dataset.section === 'skills'){
+        automaticMoveSlider(sliderElements, target);
+    }
 });
 
-skillsSection.addEventListener('mouseleave', automaticMoveSkills);
+window.addEventListener('load', () => {
+    listenProjectsElements();
+    showSuccessMessage();
+})
 
 
 

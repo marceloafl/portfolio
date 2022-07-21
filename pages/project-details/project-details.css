@@ -1,0 +1,131 @@
+.project-details{
+    align-items: center;
+    background-color: #FAFAFA;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 0 0 10% 0;
+    width: 100%;
+}
+
+.project-details__intro-wrapper{
+    background-color: #FFF;
+    border-bottom: 1px solid #DDD;
+    box-shadow: 1px 1px 20px #DDD;
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    padding: 5%;
+    width: 100%;
+}
+
+.project-details__intro-wrapper--text{
+    box-sizing: border-box;
+    padding: 5rem;
+    width: 50%;
+}
+
+.project-details__title{
+    font-size: 3rem;
+}
+
+.project-details__description{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin: 3rem 0;
+}
+
+.project-details__button{
+    align-items: center;
+    border-bottom: 3px solid var(--color-yellow);
+    color: #333333;
+    display: flex;
+    font-size: 1.15rem;
+    font-weight: 700;
+    padding: .5rem;
+    transition: 2s;
+    width: max-content;
+}
+
+.project-detail__button-icon::after {
+    color: #333;
+    content: '\f1df';
+}
+
+.project-details__intro-wrapper--image{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    width: 50%;
+}
+
+.project-details__image{
+    border-radius: 10px;
+    width: 50%;
+}
+
+.project-details__content-wrapper{
+    box-sizing: border-box;
+    padding: 2rem 5%;
+    width: 100%;
+}
+
+.project-details__section-wrapper{
+    padding: 2rem 5rem;
+}
+
+.project-details__section-title{
+    font-size: 2rem;
+}
+
+.project-details__section-text{
+    line-height: 1.75rem;
+    margin: 3rem 0;
+}
+
+.project-details__section-list{
+    line-height: 1.75rem;
+    margin: 3rem 0;
+}
+
+.project-details__button--back{
+    align-items: center;
+    border-bottom: 3px solid var(--color-yellow);
+    color: #333333;
+    display: flex;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 5rem;
+    padding: .5rem;
+    transition: 2s;
+    width: max-content;
+}
+
+@media screen and (max-width: 768px) {
+    .project-details__intro-wrapper{
+        flex-direction: column;
+    }
+
+    .project-details__intro-wrapper--text{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .project-details__title{
+        text-align: center;
+    }
+
+    .project-details__intro-wrapper--image{
+        width: 100%;
+    }
+
+    .project-details__section-wrapper{
+        padding: 2rem 1rem;
+    }
+}
