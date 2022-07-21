@@ -12,16 +12,15 @@ export function menuSocial(color, direction, showName, page){
    
     for (let index in socialNetworks){
         let image_icon = socialNetworks[index].img_url;
-        let page_url = '../../' + socialNetworks[index].page_url;
         
         if(color === 'white'){
             image_icon = socialNetworks[index].img_url_white;
         }
 
-        if (page === 'home'){
-            page_url = 'socialNetworks[index].page_url';
+        if (page !== 'home'){
+            image_icon = `../../${image_icon}`;
         }
-
+        
         const name = socialNetworks[index].name;
         const img_url = image_icon;
         
