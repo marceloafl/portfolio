@@ -1,4 +1,3 @@
-import { contactSuccess } from "./main-contact-success/main-contact-success.js";
 import { homePage } from "./main-home/main-home.js";
 import { projectDetailsPage } from "./main-project-details/main-project-details.js";
 import { projectsPage } from "./main-projects/main-projects.js";
@@ -22,10 +21,6 @@ export function main(page){
         case 'project-details':
             const projectDetailsMain = projectDetailsPage();
             body.appendChild(projectDetailsMain);
-            break;
-        case 'contact-success':
-            const contactSuccessMain = contactSuccess();
-            body.appendChild(contactSuccessMain);
             break;
         default:
             console.log('deu erro')
