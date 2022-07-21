@@ -2,7 +2,7 @@ import { sectionTitle } from "../section-title/section-title.js";
 import { skills } from "./slider-list.js";
 import { automaticMoveSlider, handleArrows } from "./slider-transition.js";
 
-const url = '../../src/assets/images/skills/';
+const url = 'src/assets/images/skills/';
 
 export function slider(sliderName){
     const slider = document.createElement('section');

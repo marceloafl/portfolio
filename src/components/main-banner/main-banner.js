@@ -20,7 +20,7 @@ function mainBannerImage(){
     imageWrapper.dataset.about = 'image-wrapper';
 
     const image = document.createElement('img');
-    image.src = '../../src/assets/images/profile-image/marcelo.png';
+    image.src = 'src/assets/images/profile-image/marcelo.png';
     image.alt = 'Marcelo Lemes'
     image.classList.add('main-banner__image');
     image.dataset.about = 'image';
@@ -35,7 +35,7 @@ function mainBannerText(){
 
     const title = mainBannerTitle();    
     const description = mainBannerDescription();    
-    const mainBannerButton = button('Ver projetos', '../../../pages/projects/index.html', true);
+    const mainBannerButton = button('Ver projetos', 'pages/projects/index.html', true);
 
     textWrapper.appendChild(title);
     textWrapper.appendChild(description);

@@ -2,7 +2,7 @@ import { projects } from "../../../pages/projects/projects-list.js";
 import { button } from "../button/button.js";
 import { sectionTitle } from "../section-title/section-title.js";
 
-const url = '../../src/assets/images/projects-portfolio/';
+const url = 'src/assets/images/projects-portfolio/';
 const chosenProjects = ['Calculadora de Preços', 'Loja On-line', 'Cloneflix', 'Portfólio'];
 
 export function cardSection(sectionName, allProjects){

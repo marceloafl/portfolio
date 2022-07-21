@@ -1,9 +1,9 @@
 let headerMenuList = [];
 
 export function menuNav(){
-    createMenuNavItem('Início', '/index.html');
-    createMenuNavItem('Projetos', '/pages/projects/index.html');
-    createMenuNavItem('Contato', '/index.html#contact');
+    createMenuNavItem('Início', 'index.html');
+    createMenuNavItem('Projetos', 'pages/projects/index.html');
+    createMenuNavItem('Contato', 'index.html#contact');
 
     const menuList = document.createElement('ul');
     menuList.classList.add('menu-nav');

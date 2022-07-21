@@ -2,7 +2,7 @@ export function logo(text, secondaryText){
     const logoWrapper = document.createElement('a');
     logoWrapper.classList.add('logo__link');
     logoWrapper.target= "_self";
-    logoWrapper.href="/index.html";    
+    logoWrapper.href="index.html";    
 
     const mainTitle = document.createElement('h1');
     mainTitle.textContent = text;
