@@ -22,23 +22,23 @@ export function cardSection(sectionName, allProjects, page){
 
     if (!allProjects){
         cardSection.appendChild(seeAllCards);
-        createHighlightedProjects(cardSectionList);
+        createHighlightedProjects(cardSectionList, page);
     } else {
-        createProjects(cardSectionList, projects);
+        createProjects(cardSectionList, projects, page);
     }
 
     
     return cardSection;
 }
 
-function createHighlightedProjects(list){
+function createHighlightedProjects(list, page){
     let highlightedProjects = new Object();
     for (const index in projects) {
         if (chosenProjects.includes(projects[index].title)){
             highlightedProjects[index] = projects[index];
         }
     }
-    createProjects(list, highlightedProjects);
+    createProjects(list, highlightedProjects, page);
 }
 
 function createProjects(list, highlightedProjects, page){

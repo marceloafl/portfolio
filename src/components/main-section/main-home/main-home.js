@@ -4,14 +4,14 @@ import { mainBanner } from "../../main-banner/main-banner.js";
 import { slider } from "../../slider/slider.js";
 import { tabBar } from "../../tab-bar/tab-bar.js";
 
-export function homePage(){
+export function homePage(page){
     const mainSection = document.createElement('main');
     mainSection.classList.add('main');
     mainSection.dataset.main;
 
     const mainBannerElement = mainBanner();
     const sliderElement = slider('Skills');
-    const cardSectionElement = cardSection('Projetos', false);
+    const cardSectionElement = cardSection('Projetos', false, page);
     const contactElement = contactSection('Contato');
     const tabBarElement = tabBar();
 

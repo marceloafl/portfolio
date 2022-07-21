@@ -5,9 +5,9 @@ import { automaticMoveSlider } from "./src/components/slider/slider-transition.j
 import { listenProjectsElements } from "./src/components/card-section/card-section.js";
 import { showSuccessMessage } from "./src/components/contact-section/contact-section.js";
 
-header();
+header('home');
 main('home');
-footer();
+footer('home');
 
 window.addEventListener('mouseover', event => {
     const target = event.target;

@@ -11,7 +11,7 @@ export function main(page){
 
     switch(page) {
         case 'home':
-            const homeMain = homePage();
+            const homeMain = homePage(page);
             body.appendChild(homeMain);
             break;
         case 'projects':

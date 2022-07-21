@@ -1,6 +1,6 @@
 import { socialNetworks } from "./social-networks-list.js";
 
-export function menuSocial(color, direction, showName){
+export function menuSocial(color, direction, showName, page){
     const socialList = document.createElement('ul');
     socialList.classList.add('menu-social__list');
     
@@ -17,7 +17,11 @@ export function menuSocial(color, direction, showName){
             image_icon = socialNetworks[index].img_url_white;
         }
 
-        const page_url = socialNetworks[index].page_url;
+        if (page === 'home'){
+            const page_url = socialNetworks[index].page_url;
+        } else {
+            const page_url = `../../${socialNetworks[index].page_url}`;
+        }
         const name = socialNetworks[index].name;
         const img_url = image_icon;
         
