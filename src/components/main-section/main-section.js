@@ -15,7 +15,7 @@ export function main(page){
             body.appendChild(homeMain);
             break;
         case 'projects':
-            const projectMain = projectsPage();
+            const projectMain = projectsPage(page);
             body.appendChild(projectMain);
             break;
         case 'project-details':

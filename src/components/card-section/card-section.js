@@ -5,7 +5,7 @@ import { sectionTitle } from "../section-title/section-title.js";
 const url = 'src/assets/images/projects-portfolio/';
 const chosenProjects = ['Calculadora de Preços', 'Loja On-line', 'Cloneflix', 'Portfólio'];
 
-export function cardSection(sectionName, allProjects){
+export function cardSection(sectionName, allProjects, page){
     const cardSection = document.createElement('section');
     cardSection.classList.add('card-section');
 
@@ -41,7 +41,7 @@ function createHighlightedProjects(list){
     createProjects(list, highlightedProjects);
 }
 
-function createProjects(list, highlightedProjects){
+function createProjects(list, highlightedProjects, page){
     for (const i in highlightedProjects){ 
         const projectCard = document.createElement('li');
         projectCard.classList.add('card-section__item');
@@ -79,7 +79,11 @@ function createProjects(list, highlightedProjects){
 
         const projectImage = document.createElement('img');
         projectImage.classList.add('card-section__item-image');
-        projectImage.src = `${url}${highlightedProjects[i].img_url}`;
+        if (page === 'home'){
+            projectImage.src = `${url}${highlightedProjects[i].img_url}`;
+        } else {
+            projectImage.src = `../../${url}${highlightedProjects[i].img_url}`;
+        }
         projectImage.alt = highlightedProjects[i].name;
 
         const projectButton = button('Ver projeto', '/pages/project-details/index.html', false);
