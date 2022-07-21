@@ -12,7 +12,7 @@ export function menuSocial(color, direction, showName, page){
    
     for (let index in socialNetworks){
         let image_icon = socialNetworks[index].img_url;
-        let page_url = `../../${socialNetworks[index].page_url}`;
+        let page_url = '../../' + socialNetworks[index].page_url;
         
         if(color === 'white'){
             image_icon = socialNetworks[index].img_url_white;

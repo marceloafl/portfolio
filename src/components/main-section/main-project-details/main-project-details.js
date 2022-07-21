@@ -2,7 +2,7 @@ import { projects } from "../../../../pages/projects/projects-list.js";
 import { button, buttonBack } from "../../button/button.js";
 import { tabBar } from "../../tab-bar/tab-bar.js";
 
-const url = 'src/assets/images/projects-portfolio/';
+const url = '../../src/assets/images/projects-portfolio/';
 
 function getProject(){
     const chosenProject = localStorage.getItem('chosenProject');
