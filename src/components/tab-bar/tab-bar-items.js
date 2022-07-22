@@ -1,16 +1,16 @@
 export const tabBarItems = {
     home: {
-        href: 'index.html',
+        href: 'https://marceloafl.github.io/portfolio/index.html',
         text: 'Início',
         content: '\ea44',
     },
     projects: {
-        href: 'pages/projects/index.html',
+        href: 'https://marceloafl.github.io/portfolio/pages/projects/index.html',
         text: 'Projetos',
         content: '\e0f0',
     },
     contact: {
-        href: 'index.html#contact',
+        href: 'https://marceloafl.github.io/portfolio/index.html#contact',
         text: 'Contato',
         content: '\e158',
     },
