@@ -98,7 +98,7 @@ function otherContact(titleText, emailAddress){
     emailWrapper.appendChild(emailIcon);
     emailWrapper.appendChild(email);
 
-    const social = menuSocial('preto', 'vertical', true);
+    const social = menuSocial('preto', 'vertical', true, 'home');
 
     wrapper.appendChild(title);
     wrapper.appendChild(social);
