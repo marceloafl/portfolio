@@ -39,6 +39,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .menu-social__list{
+        justify-content: center;
+    }
+
     .header .menu-social__list{
         display: none;
     }
