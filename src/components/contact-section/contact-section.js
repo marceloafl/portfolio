@@ -31,7 +31,7 @@ export function contactSection(){
     const setConfirmInput = document.createElement('input');
     setConfirmInput.type = 'hidden';
     setConfirmInput.name = '_next';
-    setConfirmInput.value = 'http://127.0.0.1:5500/index.html#contact';
+    setConfirmInput.value = 'https://marceloafl.github.io/portfolio/index.html#contact';
     
     const emailInput = document.createElement('input');
     emailInput.classList.add('contact__input');
