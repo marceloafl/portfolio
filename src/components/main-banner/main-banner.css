@@ -9,12 +9,13 @@
     overflow: hidden;
     width: 100%;
 }
-
+ 
 .main-banner:hover .main-banner__image-wrapper{
     background-image: url(../../assets/images/profile-image/marcelo-yellow.png);
     background-repeat: no-repeat;
     transform: translateX(20%);
 }
+
 
 .main-banner:hover .main-banner__image-wrapper .main-banner__image{
     filter: grayscale(1);
@@ -88,6 +89,10 @@
         box-shadow: none;
         flex-direction: column;
         margin-bottom: 3rem;
+    }
+
+    .main-banner:hover .main-banner__image-wrapper{
+        transform: translateX(0%);
     }
 
     .main-banner__image-wrapper{
