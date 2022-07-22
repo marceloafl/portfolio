@@ -23,6 +23,7 @@ export function menuSocial(color, direction, showName, page){
         
         const name = socialNetworks[index].name;
         const img_url = image_icon;
+        const page_url = socialNetworks[index].page_url;
         
         const socialLink = createSocialMenuItem(page_url, img_url, name, direction, showName);
         menuItems.push(socialLink);
