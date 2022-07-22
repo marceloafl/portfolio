@@ -73,7 +73,6 @@ export function contactSection(){
     contactWrapper.appendChild(formTitle);
     contactWrapper.appendChild(contentWrapper);
 
-    setSuccessMessageTime(button);
     return contactWrapper;
 }
 
@@ -107,7 +106,7 @@ function otherContact(titleText, emailAddress){
     return wrapper;
 }
 
-function setSuccessMessageTime(button){
+export function setSuccessMessageTime(button){
     button.addEventListener('click', () => {
         const time = Date.now();
         localStorage.setItem('contact-success', time);
@@ -119,7 +118,7 @@ export function showSuccessMessage(){
     const lastSentForm = parseInt(localStorage.getItem('contact-success')); 
     const currentTime = Date.now();
 
-    if(currentTime < lastSentForm + 5000){
+    if(currentTime < lastSentForm + 10000){
         successMessage.classList.remove('contact__success-message--hide');
         setTimeout(() => {
             successMessage.classList.add('contact__success-message--hide');

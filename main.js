@@ -3,7 +3,7 @@ import { main } from "./src/components/main-section/main-section.js";
 import { footer } from "./src/components/footer/footer.js";
 import { automaticMoveSlider } from "./src/components/slider/slider-transition.js";
 import { listenProjectsElements } from "./src/components/card-section/card-section.js";
-import { showSuccessMessage } from "./src/components/contact-section/contact-section.js";
+import { setSuccessMessageTime, showSuccessMessage } from "./src/components/contact-section/contact-section.js";
 
 header('home');
 main('home');
@@ -21,6 +21,13 @@ window.addEventListener('mouseover', event => {
 window.addEventListener('load', () => {
     listenProjectsElements();
     showSuccessMessage();
+});
+
+window.addEventListener('click', event => {
+    const target = event.target;
+    if (target.dataset.form = 'button'){
+        setSuccessMessageTime(target);
+    }
 })
 
 
