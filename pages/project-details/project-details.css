@@ -69,6 +69,8 @@
 
 .project-details__content-wrapper{
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     padding: 2rem 5%;
     width: 100%;
 }

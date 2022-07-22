@@ -1,5 +1,6 @@
 .button-wrapper{
     align-items: center;
+    align-self: center;
     background-color: var(--color-yellow);
     border-radius: 5px;
     box-sizing: border-box;
@@ -9,6 +10,7 @@
     justify-content: center;
     margin-top: .5rem;
     padding: 0 1rem;
+    width: max-content;
 }
 
 .button-wrapper:hover{
