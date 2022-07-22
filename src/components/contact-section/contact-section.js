@@ -12,6 +12,7 @@ export function contactSection(){
     contentWrapper.classList.add('content__wrapper');
 
     const form = document.createElement('form');
+    form.dataset.form = 'form';
     form.classList.add('contact__form'); 
     form.action = "https://formsubmit.co/marceloaflemes@gmail.com";
     form.method = "POST";
@@ -106,11 +107,10 @@ function otherContact(titleText, emailAddress){
     return wrapper;
 }
 
-export function setSuccessMessageTime(button){
-    button.addEventListener('click', () => {
-        const time = Date.now();
-        localStorage.setItem('contact-success', time);
-    })
+export function setSuccessMessageTime(){
+    const time = Date.now();
+    localStorage.setItem('contact-success', time);
+
 }
 
 export function showSuccessMessage(){

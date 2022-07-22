@@ -23,13 +23,14 @@ window.addEventListener('load', () => {
     showSuccessMessage();
 });
 
-window.addEventListener('click', event => {
+const form = document.querySelector('[data-form="form"]')
+
+form.addEventListener('submit', event =>{
     const target = event.target;
-    if (target.dataset.form = 'button'){
+    if (target.dataset.form = 'form'){
         setSuccessMessageTime(target);
     }
-})
-
+});
 
 
 
