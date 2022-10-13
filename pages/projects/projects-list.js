@@ -4,7 +4,7 @@ export const projects = {
         project_url: 'https://marceloafl.github.io/carrinho-de-compras-ecommerce/',
         resume: 'Página simulando um carrinho de compras de e-commerce.',
         img_url: 'carrinho-de-ecommerce.png',
-        languages: ['ReactJS', 'Typescript', 'CSS Modules'],
+        languages: ['ReactJS', 'Typescript', 'CSS Modules, SCSS'],
         challenge: 'Em breve você vai poder conferir como foi o desafio de fazer este projeto.',
         resolution: 'Aqui você vai poder ver os detalhes de como este projeto foi construído',
     },

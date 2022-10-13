@@ -72,7 +72,7 @@ function createProjects(list, highlightedProjects, page){
 
         const projectLanguages = document.createElement('p');
         projectLanguages.classList.add('card-section__item-languages');
-        projectLanguages.textContent = highlightedProjects[i].languages;
+        projectLanguages.textContent = highlightedProjects[i].languages.join(', ');
 
         const projectImageWrapper = document.createElement('section');
         projectImageWrapper.classList.add('card-section__item-image-wrapper');
