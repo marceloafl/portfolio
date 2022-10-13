@@ -3,7 +3,7 @@ import { button } from "../button/button.js";
 import { sectionTitle } from "../section-title/section-title.js";
 
 const url = 'src/assets/images/projects-portfolio/';
-const chosenProjects = ['Calculadora de Preços', 'Loja On-line', 'Cloneflix', 'Carrinho de Compras de E-commerce'];
+const chosenProjects = ['Calculadora de Preços', 'Loja On-line', 'Cloneflix', 'Carrinho de E-commerce'];
 
 export function cardSection(sectionName, allProjects, page){
     const cardSection = document.createElement('section');
