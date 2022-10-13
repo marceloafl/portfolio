@@ -1,4 +1,13 @@
 export const projects = {
+    carrinhoDeCompras: {
+        title: 'Carrinho de Compras de E-commerce',
+        project_url: 'https://marceloafl.github.io/carrinho-de-compras-ecommerce/',
+        resume: 'Página simulando um carrinho de compras de e-commerce.',
+        img_url: 'carrinho-de-ecommerce.png',
+        languages: ['ReactJS', 'CSS Modules'],
+        challenge: 'Estou finalizando a criação deste site e em breve você vai poder conferir como foi o desafio de fazer este projeto',
+        resolution: 'Aqui você vai poder ver os detalhes de como este projeto foi construído',
+    },
     calculadoraDePrecos: {
         title: 'Calculadora de Preços',
         project_url: 'https://marceloafl.github.io/calculadora-de-precos/',
