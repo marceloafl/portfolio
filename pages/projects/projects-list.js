@@ -1,11 +1,11 @@
 export const projects = {
     carrinhoDeCompras: {
-        title: 'Carrinho de Compras de E-commerce',
+        title: 'Carrinho de E-commerce',
         project_url: 'https://marceloafl.github.io/carrinho-de-compras-ecommerce/',
         resume: 'Página simulando um carrinho de compras de e-commerce.',
         img_url: 'carrinho-de-ecommerce.png',
-        languages: ['ReactJS', 'CSS Modules'],
-        challenge: 'Estou finalizando a criação deste site e em breve você vai poder conferir como foi o desafio de fazer este projeto',
+        languages: ['ReactJS', 'Typescript', 'CSS Modules'],
+        challenge: 'Em breve você vai poder conferir como foi o desafio de fazer este projeto.',
         resolution: 'Aqui você vai poder ver os detalhes de como este projeto foi construído',
     },
     calculadoraDePrecos: {
@@ -14,7 +14,7 @@ export const projects = {
         resume: 'Calcule o preço de venda de produtos e serviços',
         img_url: 'calculadora-de-precos.png',
         languages: ['HTML', 'CSS', 'Javascript'],
-        challenge: 'Estou finalizando a criação deste site e em breve você vai poder conferir como foi o desafio de fazer este projeto',
+        challenge: 'Em breve você vai poder conferir como foi o desafio de fazer este projeto.',
         resolution: 'Aqui você vai poder ver os detalhes de como este projeto foi construído',
     },
     jogoDaMemoria: {
@@ -23,7 +23,7 @@ export const projects = {
         resume: 'Jogo da memória com três níveis de dificuldade',
         img_url: 'jogo-da-memoria.png',
         languages: ['HTML', 'CSS', 'Javascript'],
-        challenge: 'Estou finalizando a criação deste site e em breve você vai poder conferir como foi o desafio de fazer este projeto',
+        challenge: 'Em breve você vai poder conferir como foi o desafio de fazer este projeto.',
         resolution: 'Aqui você vai poder ver os detalhes de como este projeto foi construído',
     },
     lojaOnline: {
@@ -32,7 +32,7 @@ export const projects = {
         resume: 'Página inicial de e-commerce responsivo',
         img_url: 'loja-online.png',
         languages: ['HTML', 'CSS'],
-        challenge: 'Estou finalizando a criação deste site e em breve você vai poder conferir como foi o desafio de fazer este projeto',
+        challenge: 'Em breve você vai poder conferir como foi o desafio de fazer este projeto.',
         resolution: 'Aqui você vai poder ver os detalhes de como este projeto foi construído',
     },
     cloneflix: {
@@ -41,7 +41,7 @@ export const projects = {
         resume: 'Clone da Netflix',
         img_url: 'cloneflix.png',
         languages: ['HTML', 'CSS', 'Javascript'],
-        challenge: 'Estou finalizando a criação deste site e em breve você vai poder conferir como foi o desafio de fazer este projeto',
+        challenge: 'Em breve você vai poder conferir como foi o desafio de fazer este projeto.',
         resolution: 'Aqui você vai poder ver os detalhes de como este projeto foi construído',
     },
     listaDeCompras: {
@@ -50,7 +50,7 @@ export const projects = {
         resume: 'Organize sua lista durante as compras, adicionando, riscando e excluindo itens.',
         img_url: 'lista-de-compras.png',
         languages: ['HTML', 'CSS'],
-        challenge: 'Estou finalizando a criação deste site e em breve você vai poder conferir como foi o desafio de fazer este projeto',
+        challenge: 'Em breve você vai poder conferir as como foi o desafio de fazer este projeto.',
         resolution: 'Aqui você vai poder ver os detalhes de como este projeto foi construído',
     },
     portfolio: {
@@ -59,7 +59,7 @@ export const projects = {
         resume: 'Meu site com portfólio de projetos e informações sobre meu trabalho.',
         img_url: 'portfolio.png',
         languages: ['HTML', 'CSS', 'Javascript'],
-        challenge: 'Estou finalizando a criação deste site e em breve você vai poder conferir como foi o desafio de fazer este projeto',
+        challenge: 'Em breve você vai poder conferir como foi o desafio de fazer este projeto.',
         resolution: 'Aqui você vai poder ver os detalhes de como este projeto foi construído',
     },
 };
