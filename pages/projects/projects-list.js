@@ -62,5 +62,14 @@ export const projects = {
         challenge: 'Em breve você vai poder conferir como foi o desafio de fazer este projeto.',
         resolution: 'Aqui você vai poder ver os detalhes de como este projeto foi construído',
     },
+    buscaCep: {
+        title: 'Busca CEP',
+        project_url: 'https://marceloafl.github.io/busca-cep/',
+        resume: 'Simulação de formulário para cadastro de endereço com consumo de API para buscar CEP.',
+        img_url: 'busca-cep.png',
+        languages: ['HTML', 'CSS', 'Javascript'],
+        challenge: 'Em breve você vai poder conferir como foi o desafio de fazer este projeto.',
+        resolution: 'Aqui você vai poder ver os detalhes de como este projeto foi construído',
+    },
 };
 
