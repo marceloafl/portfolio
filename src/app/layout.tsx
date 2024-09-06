@@ -1,7 +1,6 @@
 import "@/styles/global.css";
 import { raleway } from "@/styles/fonts";
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
+import { ThemeProvider } from "@/contexts/ThemeContext";
 
 export default function RootLayout({
   children,
@@ -10,10 +9,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={raleway.className}>
-      <body className="max-w-3xl mx-auto p-3">
-        <Header />
-        {children}
-        <Footer />
+      <body>
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

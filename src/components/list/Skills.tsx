@@ -32,7 +32,7 @@ const skills: string[] = [
 export default function Skills() {
   return (
     <section className="flex flex-col gap-3">
-      <p className="text-xs p-3 border-b border-[#e5e7eb]">Skills</p>
+      <p className="text-xs p-3 border-b border-gray">Skills</p>
       <li className="flex gap-4 flex-wrap">
         {skills.map((skill, index) => (
           <ul key={index} className="text-sm sm:text-base">

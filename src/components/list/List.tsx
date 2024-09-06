@@ -12,7 +12,7 @@ export default function List({ items }: { items: ListItem[] }) {
       {items.map((item) => (
         <ul
           key={item.id}
-          className="border-t border-[#e5e7eb] p-3 flex justify-between"
+          className="border-t border-gray p-3 flex justify-between"
         >
           <a href={item.href} target="_blank">
             <p className="font-medium">{item.title}</p>
