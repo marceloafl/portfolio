@@ -1,4 +1,4 @@
-import { ListItem } from "@/app/page";
+import { ListItem } from "@/app/data";
 
 export default function List({ items }: { items: ListItem[] }) {
   return (
