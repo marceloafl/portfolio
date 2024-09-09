@@ -11,7 +11,7 @@ export default function ThemeButton() {
 
   return (
     <button onClick={toggleTheme} className="border-l border-gray pl-4">
-      {theme === "light" ? <LightModeIcon /> : <DarkModeIcon />}
+      {theme === "light" ? <DarkModeIcon /> : <LightModeIcon />}
     </button>
   );
 }
