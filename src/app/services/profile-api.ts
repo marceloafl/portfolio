@@ -1,22 +1,6 @@
-const stacks = ["Frontend", "Backend", "Fullstack", "Low-code"] as const;
-type Stack = (typeof stacks)[number];
+import { IProfile } from "@/types/profiles";
 
-interface IProject {
-  name: string;
-  url: string;
-  stack: Stack;
-}
-
-interface IProfile {
-  name: string;
-  email: string;
-  githubUrl: string;
-  linkedinUrl: string;
-  title: string;
-  subtitle: string;
-  projects: IProject[];
-  skills: string[];
-}
+const url = "http://localhost:8081/v1/profiles";
 
 const marceloProfile: IProfile = {
   name: "string",
@@ -28,12 +12,17 @@ const marceloProfile: IProfile = {
   projects: [],
   skills: [],
 };
-
-export default async function getProfileInfo() {
+export default async function getProfileById(id: string, token: string) {
   try {
-    const response = await fetch("");
+    const response = await fetch(`${url}/${id}`, {
+      method: "GET",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+    });
     const data = response.json();
-    console.log(data);
+    return data;
   } catch (error) {
     console.error(error);
   }

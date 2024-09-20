@@ -1,10 +1,10 @@
 "use server";
 
 import { cookies } from "next/headers";
-import userLoginRequest from "../services/user-api";
+import userLoginRequest from "../../app/services/user-api";
 import { redirect } from "next/navigation";
 
-export default async function userLogin(email: string, password: string) {
+export default async function login(email: string, password: string) {
   const { data, status } = await userLoginRequest(email, password);
 
   if (status !== 200 || !data.token) {
@@ -12,7 +12,6 @@ export default async function userLogin(email: string, password: string) {
   }
 
   cookies().set("authToken", data.token, {
-    path: "/edit",
     httpOnly: true,
     sameSite: "strict",
   });

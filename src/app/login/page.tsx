@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import userLogin from "./action";
+import login from "../../actions/signin/login";
 
 export default function LoginPage() {
   const [loginError, setLoginError] = useState(false);
@@ -10,7 +10,7 @@ export default function LoginPage() {
     event.preventDefault();
     const { email, password } = event.target.elements;
 
-    const { error } = (await userLogin(email.value, password.value)) || {};
+    const { error } = (await login(email.value, password.value)) || {};
 
     if (error) {
       setLoginError(error);
