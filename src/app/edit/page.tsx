@@ -1,15 +1,10 @@
-import type { InferGetStaticPropsType, GetStaticProps } from "next";
-import { IProfile } from "@/types/profiles";
-import LogoutIcon from "@mui/icons-material/Logout";
-import { useState } from "react";
-import getAllProfile from "../services/profile-api";
-import getProfileById from "../services/profile-api";
 import EditProfile from "@/components/forms/edit-profile/EditProfile";
-import { cookies } from "next/headers";
 import getOneProfile from "../../actions/profile/getOneProfile";
 import LogoutButton from "@/components/button/logout-button/LogoutButton";
+import checkProtectedRoutes from "@/utils/checkProtectedRoutes";
 
 export default async function EditPage() {
+  checkProtectedRoutes();
   const profileId = "66edd9186183a3705f1aa8f4";
   const profile = await getOneProfile(profileId);
 
