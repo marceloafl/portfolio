@@ -10,7 +10,8 @@ export default function LoginPage() {
     event.preventDefault();
     const { email, password } = event.target.elements;
 
-    const { error } = (await login(email.value, password.value)) || {};
+    // const { error } = (await login(email.value, password.value)) || {};
+    const error = false;
 
     if (error) {
       setLoginError(error);
