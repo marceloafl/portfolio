@@ -85,18 +85,19 @@ export async function updateProfileRequest(
   token: string,
   updatedProfile: IProfile
 ) {
-  try {
-    const response = await fetch(`${url}/${id}`, {
-      method: "PUT",
-      headers: {
-        Authorization: `Bearer ${token}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(updatedProfile),
-    });
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error(error);
-  }
+  return mockedProfile;
+  // try {
+  //   const response = await fetch(`${url}/${id}`, {
+  //     method: "PUT",
+  //     headers: {
+  //       Authorization: `Bearer ${token}`,
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(updatedProfile),
+  //   });
+  //   const data = await response.json();
+  //   return data;
+  // } catch (error) {
+  //   console.error(error);
+  // }
 }
