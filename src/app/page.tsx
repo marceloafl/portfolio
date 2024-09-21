@@ -1,7 +1,7 @@
 import MainBanner from "@/components/banner/MainBanner";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
-import List from "@/components/list/List";
+import ProjectList from "@/components/list/ProjectsList";
 import Skills from "@/components/list/Skills";
 import ThemeWrapper from "@/components/theme-wrapper/ThemeWrapper";
 import getOneProfile from "@/actions/profile/getOneProfile";
@@ -20,7 +20,7 @@ export default async function Page() {
         />
         <main>
           <MainBanner title={profile.title} subtitle={profile.subtitle} />
-          <List projects={profile.projects} />
+          <ProjectList projects={profile.projects} />
           <Skills skills={profile.skills} />
         </main>
         <Footer

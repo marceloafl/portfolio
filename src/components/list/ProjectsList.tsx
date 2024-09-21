@@ -4,7 +4,7 @@ interface ProjectListProps {
   projects: IProject[];
 }
 
-export default function List({ projects }: ProjectListProps) {
+export default function ProjectsList({ projects }: ProjectListProps) {
   return (
     <li className="list-none pb-12">
       <ul className="flex justify-between text-xs p-3">
