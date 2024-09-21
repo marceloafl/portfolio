@@ -69,15 +69,15 @@ const mockedProfile: IProfile = {
 };
 
 export async function getProfileByIdRequest(id: string) {
-  try {
-    const response = await fetch(`${url}/${id}`);
-    const data = await response.json();
+  return mockedProfile;
+  // try {
+  //   const response = await fetch(`${url}/${id}`);
+  //   const data = await response.json();
 
-    return mockedProfile;
-    // return data;
-  } catch (error) {
-    console.error(error);
-  }
+  //   return data;
+  // } catch (error) {
+  //   console.error(error);
+  // }
 }
 
 export async function updateProfileRequest(
