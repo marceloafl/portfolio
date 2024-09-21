@@ -7,7 +7,7 @@ import ThemeWrapper from "@/components/theme-wrapper/ThemeWrapper";
 import getOneProfile from "@/actions/profile/getOneProfile";
 
 export default async function Page() {
-  const profileId = "66edd9186183a3705f1aa8f4";
+  const profileId = "66ef1bc3a0ea4ad8631d2930";
   const profile = await getOneProfile(profileId);
   return (
     <ThemeWrapper>

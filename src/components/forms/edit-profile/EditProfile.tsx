@@ -12,7 +12,7 @@ interface EditProfileProps {
 }
 
 export default function EditProfile({ profile }: EditProfileProps) {
-  const profileId = "66edd9186183a3705f1aa8f4";
+  const profileId = "66ef1bc3a0ea4ad8631d2930";
   const [currentProfile, setCurrentProfile] = useState<IProfile>(profile);
 
   const handleSkillsChange = (newSkills: string[]) => {

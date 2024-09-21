@@ -5,7 +5,7 @@ import checkProtectedRoutes from "@/utils/checkProtectedRoutes";
 
 export default async function EditPage() {
   checkProtectedRoutes();
-  const profileId = "66edd9186183a3705f1aa8f4";
+  const profileId = "66ef1bc3a0ea4ad8631d2930";
   const profile = await getOneProfile(profileId);
 
   return (
