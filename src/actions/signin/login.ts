@@ -1,7 +1,7 @@
 "use server";
 
 import { cookies } from "next/headers";
-import userLoginRequest from "../../app/services/user-api";
+import userLoginRequest from "../../services/user-api";
 import { redirect } from "next/navigation";
 
 export default async function login(email: string, password: string) {

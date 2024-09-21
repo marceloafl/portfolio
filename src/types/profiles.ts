@@ -1,7 +1,7 @@
-const stacks = ["Frontend", "Backend", "Fullstack", "Low-code"] as const;
-type Stack = (typeof stacks)[number];
+export const stacks = ["Frontend", "Backend", "Fullstack", "Low-code"] as const;
+export type Stack = (typeof stacks)[number];
 
-interface IProject {
+export interface IProject {
   name: string;
   url: string;
   stack: Stack;
