@@ -1,35 +1,8 @@
-const skills: string[] = [
-  "Javascript",
-  "Typescript",
-  "React.js",
-  "Next.js",
-  "Vue.js",
-  "Storybook",
-  "SEO",
-  "HTML",
-  "CSS",
-  "Tailwind",
-  "Styled-components",
-  "Module CSS",
-  "Bootstrap",
-  "Material-UI",
-  "Node.js",
-  "Express",
-  "C#",
-  ".NET",
-  "API Rest",
-  "Git",
-  "Vitest",
-  "Jest",
-  "React Testing Library",
-  "AWS",
-  "Azure",
-  "SQL",
-  "Google Analytics",
-  "Mendix",
-];
+interface SkillsProps {
+  skills: string[];
+}
 
-export default function Skills() {
+export default function Skills({ skills }: SkillsProps) {
   return (
     <section className="flex flex-col gap-3">
       <p className="text-xs p-3 border-b border-gray">Skills</p>

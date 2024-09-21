@@ -1,9 +1,15 @@
 import Contact from "@/components/contact/Contact";
 
-export default function Footer() {
+interface FooterProps {
+  email: string;
+  githubUrl: string;
+  linkedinUrl: string;
+}
+
+export default function Footer({ email, githubUrl, linkedinUrl }: FooterProps) {
   return (
     <footer className="flex justify-end mt-16">
-      <Contact />
+      <Contact email={email} githubUrl={githubUrl} linkedinUrl={linkedinUrl} />
     </footer>
   );
 }

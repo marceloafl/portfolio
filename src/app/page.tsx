@@ -3,20 +3,31 @@ import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import List from "@/components/list/List";
 import Skills from "@/components/list/Skills";
-import { listItems } from "./data";
 import ThemeWrapper from "@/components/theme-wrapper/ThemeWrapper";
+import getOneProfile from "@/actions/profile/getOneProfile";
 
-export default function Page() {
+export default async function Page() {
+  const profileId = "66edd9186183a3705f1aa8f4";
+  const profile = await getOneProfile(profileId);
   return (
     <ThemeWrapper>
       <div className="max-w-3xl mx-auto p-3">
-        <Header />
+        <Header
+          name={profile.name}
+          email={profile.email}
+          githubUrl={profile.githubUrl}
+          linkedinUrl={profile.linkedinUrl}
+        />
         <main>
-          <MainBanner />
-          <List items={listItems} />
-          <Skills />
+          <MainBanner title={profile.title} subtitle={profile.subtitle} />
+          <List projects={profile.projects} />
+          <Skills skills={profile.skills} />
         </main>
-        <Footer />
+        <Footer
+          email={profile.email}
+          githubUrl={profile.githubUrl}
+          linkedinUrl={profile.linkedinUrl}
+        />
       </div>
     </ThemeWrapper>
   );

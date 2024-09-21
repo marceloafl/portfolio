@@ -2,15 +2,9 @@ import { IProfile } from "@/types/profiles";
 
 const url = "http://localhost:8081/v1/profiles";
 
-export async function getProfileByIdRequest(id: string, token: string) {
+export async function getProfileByIdRequest(id: string) {
   try {
-    const response = await fetch(`${url}/${id}`, {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${token}`,
-        "Content-Type": "application/json",
-      },
-    });
+    const response = await fetch(`${url}/${id}`);
     const data = await response.json();
     return data;
   } catch (error) {

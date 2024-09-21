@@ -1,6 +1,10 @@
-import { ListItem } from "@/app/data";
+import { IProject } from "@/types/profiles";
 
-export default function List({ items }: { items: ListItem[] }) {
+interface ProjectListProps {
+  projects: IProject[];
+}
+
+export default function List({ projects }: ProjectListProps) {
   return (
     <li className="list-none pb-12">
       <ul className="flex justify-between text-xs p-3">
@@ -9,16 +13,16 @@ export default function List({ items }: { items: ListItem[] }) {
           <p className="mr-10">Stack</p>
         </div>
       </ul>
-      {items.map((item) => (
+      {projects.map((p) => (
         <ul
-          key={item.id}
+          key={p.url}
           className="border-t border-gray p-3 flex justify-between"
         >
-          <a href={item.href} target="_blank">
-            <p className="font-medium">{item.title}</p>
+          <a href={p.url} target="_blank">
+            <p className="font-medium">{p.name}</p>
           </a>
           <div className="w-20">
-            <p>{item.stack}</p>
+            <p>{p.stack}</p>
           </div>
         </ul>
       ))}
