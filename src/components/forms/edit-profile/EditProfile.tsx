@@ -41,7 +41,7 @@ export default function EditProfile({ profile }: EditProfileProps) {
           label="Email"
           id="email"
           type="text"
-          value={profile.email}
+          value={currentProfile.email}
           onChange={(value) =>
             setCurrentProfile({ ...currentProfile, email: value })
           }
@@ -51,7 +51,7 @@ export default function EditProfile({ profile }: EditProfileProps) {
           label="Name"
           id="name"
           type="text"
-          value={profile.name}
+          value={currentProfile.name}
           required
           onChange={(value) =>
             setCurrentProfile({ ...currentProfile, name: value })
@@ -62,7 +62,7 @@ export default function EditProfile({ profile }: EditProfileProps) {
           label="GitHub URL"
           id="githubUrl"
           type="url"
-          value={profile.githubUrl}
+          value={currentProfile.githubUrl}
           onChange={(value) =>
             setCurrentProfile({ ...currentProfile, githubUrl: value })
           }
@@ -72,7 +72,7 @@ export default function EditProfile({ profile }: EditProfileProps) {
           label="LinkedIn URL"
           id="linkedinUrl"
           type="url"
-          value={profile.linkedinUrl}
+          value={currentProfile.linkedinUrl}
           onChange={(value) =>
             setCurrentProfile({ ...currentProfile, linkedinUrl: value })
           }
@@ -82,7 +82,7 @@ export default function EditProfile({ profile }: EditProfileProps) {
           label="Title"
           id="title"
           type="text"
-          value={profile.title}
+          value={currentProfile.title}
           onChange={(value) =>
             setCurrentProfile({ ...currentProfile, title: value })
           }
@@ -92,7 +92,7 @@ export default function EditProfile({ profile }: EditProfileProps) {
           label="Subtitle"
           id="subtitle"
           type="text"
-          value={profile.subtitle}
+          value={currentProfile.subtitle}
           onChange={(value) =>
             setCurrentProfile({ ...currentProfile, subtitle: value })
           }
