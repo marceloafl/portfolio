@@ -41,7 +41,7 @@ const mockedProfile: IProfile = {
       stack: "Low-code",
     },
     {
-      name: "Outros projetos (Github)",
+      name: "Other projects (Github)",
       url: "https://github.com/marceloafl?tab=repositories",
       stack: "Fullstack",
     },
