@@ -40,6 +40,11 @@ const mockedProfile: IProfile = {
       url: "http://munchkin.com.br/",
       stack: "Low-code",
     },
+    {
+      name: "Outros projetos (Github)",
+      url: "https://github.com/marceloafl?tab=repositories",
+      stack: "Fullstack",
+    },
   ],
   skills: [
     "JavaScript",
