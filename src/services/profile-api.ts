@@ -11,6 +11,11 @@ const mockedProfile: IProfile = {
   subtitle: "Crafting transformative solutions that solve real-world issues.",
   projects: [
     {
+      name: "MySide",
+      url: "https://myside.com.br/",
+      stack: "Frontend",
+    },
+    {
       name: "Birmingham Bank",
       url: "http://www.birminghambank.com/",
       stack: "Frontend",
